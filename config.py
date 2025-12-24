@@ -1,0 +1,3 @@
+MODEL = "qwen/qwen3-32b"
+TEMPERATURE = 0.7
+MAX_TOKENS = 1024
