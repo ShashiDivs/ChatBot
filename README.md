@@ -7,3 +7,5 @@
 
 ## pip install -r requirements.txt
 ## running application streamlit run app.py
+
+## cloning repo ---> https://github.com/ShashiDivs/ChatBot.git
