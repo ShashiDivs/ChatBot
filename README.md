@@ -9,3 +9,11 @@
 ## running application streamlit run app.py
 
 ## cloning repo ---> https://github.com/ShashiDivs/ChatBot.git
+
+## Logging levels
+
+    - DEBUG Detailed internal information
+    - INFO Simple information flow
+    - WARNING When something is unexpected, still it continues
+    - ERROR  it is something failed
+    - CRITICAl Serious problem occurs program may stop

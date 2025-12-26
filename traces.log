@@ -1,0 +1,11 @@
+INFO: The main application starts from here
+DEBUG: The order_process() this function
+INFO: processing the Order
+WARNING: No quantity: 0
+DEBUG: the function order_process() Done
+DEBUG: The order_process() this function
+INFO: processing the Order
+WARNING: Stocking is low quantity: 1
+INFO: order Done!
+DEBUG: the function order_process() Done
+CRITICAL: The Program May shut down

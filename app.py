@@ -1,9 +1,20 @@
 import streamlit as st
 from config import MODEL
 from tutors.base_tutor import PythonnClassBot
+from tutors.java_tutor import JavaClassBot
 from chatbot.engine import ChatBot
 from dotenv import load_dotenv
 import os
+import logging
+
+logging.basicConfig(
+    filename="app.log",
+    filemode="w",
+    level=logging.INFO,
+    format= '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+
+logger = logging.getLogger('Bot Logging')
 
 load_dotenv()
 api_key = os.getenv('GROQ_API_KEY')
@@ -24,8 +35,25 @@ if not api_key:
     st.info("Please upddate your apikey in .env")
     st.stop()
 
+
+tutor_choice = st.sidebar.selectbox(
+    "Select the Programming Language",
+    options = ["Python", "Java"],
+    index=0
+)
+
 # create objects
-tutor = PythonnClassBot()
+#tutor = PythonnClassBot()
+
+if tutor_choice == "Python":
+    tutor = PythonnClassBot()
+    logger.info("Python has been chosen")
+else:
+    tutor = JavaClassBot()
+    logger.info("Python has been chosen")
+
+st.sidebar.success(f"Active Tutor is: {tutor_choice}")
+
 chat_engine = ChatBot(api_key=api_key, model=MODEL)
 
 
