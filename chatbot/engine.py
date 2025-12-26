@@ -20,11 +20,8 @@ class ChatBot:
         logger.info(f"Chatbot initialized with mode {MODEL}")
 
     def add_system_message(self, content: str):
-        try:
-            self.messages.append({'role':"sytem", 'content':content})
-            logger.debug('Sytem message added')
-        except Exception as e:
-            raise e
+        self.messages.append({'role':"sytem", 'content':content})
+        logger.debug('Sytem message added')
     
     def add_assistant_message(self, content: str):
         self.messages.append({'role':"assistant", 'content':content})

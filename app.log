@@ -1,2 +1,12 @@
-2025-12-26 19:33:36,511 - Bot Logging - INFO - Python has been chosen
-2025-12-26 19:33:37,408 - ChatBot - INFO - Chatbot initialized with mode qwen/qwen3-32b
+2025-12-26 19:47:48,757 - Bot Logging - INFO - Python has been chosen
+2025-12-26 19:47:49,348 - ChatBot - INFO - Chatbot initialized with mode qwen/qwen3-32b
+2025-12-26 20:01:45,472 - Bot Logging - INFO - Python has been chosen
+2025-12-26 20:01:45,603 - ChatBot - INFO - Chatbot initialized with mode qwen/qwen3-32b
+2025-12-26 20:01:47,224 - ChatBot - INFO - User Question: Hi
+2025-12-26 20:01:47,513 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-12-26 20:02:56,851 - Bot Logging - INFO - Python has been chosen
+2025-12-26 20:02:56,991 - ChatBot - INFO - Chatbot initialized with mode qwen/qwen3-32b
+2025-12-26 20:02:59,992 - Bot Logging - INFO - Python has been chosen
+2025-12-26 20:03:00,183 - ChatBot - INFO - Chatbot initialized with mode qwen/qwen3-32b
+2025-12-26 20:03:00,191 - ChatBot - INFO - User Question: Hi
+2025-12-26 20:03:00,517 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
