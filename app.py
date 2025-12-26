@@ -7,6 +7,8 @@ from dotenv import load_dotenv
 import os
 import logging
 
+api_key = st.secrets.get('GROQ_API_KEY') or os.getenv('GROQ_API_KEY')
+
 logging.basicConfig(
     filename="app.log",
     filemode="w",
